@@ -11,6 +11,10 @@
           - tmux
           - cmatrix
           - python3-psutil
+          - zsh
+          - vim
+
+    - name: install ohmyzsh
 
     - name: copy wallpaper
       copy:
