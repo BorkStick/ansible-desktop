@@ -33,14 +33,14 @@
 
     - name: copy .bashrc
       copy:
-        src: files/.bashrc
+        src: files/bashrc
         dest: /home/aciidic/.bashrc
         owner: aciidic
         group: aciidic
 
     - name: copy .bash_profile
       copy:
-        src: files/.bash_profile
+        src: files/bash_profile
         dest: /home/aciidic/.bash_profile
         owner: aciidic
         group: aciidic
