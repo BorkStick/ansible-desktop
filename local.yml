@@ -44,3 +44,23 @@
         dest: /home/aciidic/.bash_aliases
         owner: aciidic
         group: aciidic
+
+    - name: add ansible user
+      user:
+        name: borkauto
+        system: yes
+
+    - name: set up sudo for ansible user
+      copy:
+        src: files/sudoer_borkauto
+        dest: /etc/sudoers.d/borkauto
+        owner: root
+        group: root
+        mode: 0440
+
+    - name: add ansible-pull cron job
+      cron:
+        name: ansible auto-provision
+        user: borkauto
+        minute: "*/10"
+        job: ansible-pull -o -U https://github.com/BorkStick/ansible-desktop.git
