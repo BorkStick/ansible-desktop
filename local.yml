@@ -10,6 +10,7 @@
           - htop
           - tmux
           - cmatrix
+          - python3-psutil
 
     - name: copy wallpaper
       copy:
