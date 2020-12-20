@@ -41,6 +41,6 @@
     - name: copy .bash_profile
       copy:
         src: files/bash_profile
-        dest: /home/aciidic/.bash_profile
+        dest: /home/aciidic/.bash_aliases
         owner: aciidic
         group: aciidic
