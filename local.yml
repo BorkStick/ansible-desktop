@@ -33,15 +33,29 @@
 
     - name: copy .bashrc
       copy:
-        src: files/bashrc
+        src: files/dotfiles/bashrc
         dest: /home/aciidic/.bashrc
         owner: aciidic
         group: aciidic
 
     - name: copy .bash_aliases
       copy:
-        src: files/bash_aliases
+        src: files/dotfiles/bash_aliases
         dest: /home/aciidic/.bash_aliases
+        owner: aciidic
+        group: aciidic
+
+    - name: copy .tmux.conf
+      copy:
+        src: files/dotfiles/tmux.conf
+        dest: /home/aciidic/.tmux.conf
+        owner: aciidic
+        group: aciidic
+
+    - name: copy .zshrc
+      copy:
+        src: files/dotfiles/zshrc
+        dest: /home/aciidic/.zshrc
         owner: aciidic
         group: aciidic
 
