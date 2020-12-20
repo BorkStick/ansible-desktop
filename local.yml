@@ -38,9 +38,9 @@
         owner: aciidic
         group: aciidic
 
-    - name: copy .bash_profile
+    - name: copy .bash_aliases
       copy:
-        src: files/bash_profile
+        src: files/bash_aliases
         dest: /home/aciidic/.bash_aliases
         owner: aciidic
         group: aciidic
