@@ -15,7 +15,7 @@
     - name: copy wallpaper
       copy:
         src: files/wallhaven-g8gxo3.png
-        dest: /usr/share/backgrounds/ansible-wallpaper.
+        dest: /usr/share/backgrounds/ansible-wallpaper.png
         owner: root
         group: root
 
