@@ -14,8 +14,6 @@
           - zsh
           - vim
 
-    - name: install ohmyzsh
-
     - name: copy wallpaper
       copy:
         src: files/wallhaven-g8gxo3.png
